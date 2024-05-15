@@ -1,0 +1,194 @@
+<html>
+<head>
+  <title>Punjabi Cuisine</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Raleway;
+    background-color: #202125;
+  }
+  
+  .heading {
+      text-align: center;
+      font-size: 2.0em;
+      letter-spacing: 1px;
+      padding: 40px;
+      color: white;
+  }
+  
+  .gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+
+  footer {
+      background-color: #202125;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .comment-box {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .comment-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .comment-input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+
+    .submit-button {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <p class="heading">Punjabi Cuisine</p>
+  <div class="gallery-image">
+    <div class="img-box">
+        <img src="https://cdn.cdnparenting.com/articles/2019/03/25144135/774826042-H-1024x700.webp" alt="">
+      <div class="transparent-box">
+        <div class="caption">
+
+          <p><a href="https://www.vegrecipesofindia.com/sarson-ka-saag/">Sarson Ka Saag</a></p>
+          <p class="opacity-low">Lunch</p>       
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://www.shutterstock.com/image-photo/chole-bhature-chick-pea-curry-600nw-1072270610.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          
+          <a href="https://www.vegrecipesofindia.com/chole-bhature/">Chole Bhature</a>
+          <p class="opacity-low">Lunch</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+        <img src="https://t3.ftcdn.net/jpg/01/14/51/60/360_F_114516029_Z2B6FO30AB6ZR3v9WHXjpXmJScaiLtzk.jpg" alt="" />
+
+      <div class="transparent-box">
+        <div class="caption">
+            <p><a href="https://www.indianhealthyrecipes.com/chicken-biryani-recipe/">Chicken Biryani</a></p>
+            <p class="opacity-low">Snacks</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7XZGJt9Il9u0NY9Lo9tI-hNw97MZyLYOabw&usqp=CAU" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p> <a href="https://www.indianhealthyrecipes.com/rajma-recipe-rajma-masala-recipe/">Rajma Chawal</a></p>
+          <p class="opacity-low">Lunch</p>
+      </div> 
+    </div>
+    
+    <div class="img-box">
+      <img src="https://thumbs.dreamstime.com/b/aloo-paratha-indian-potato-stuffed-flatbread-butter-top-served-fresh-sweet-lassi-chutney-pickle-selective-focus-lassie-164213775.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+            <a href="https://www.indianhealthyrecipes.com/aloo-paratha/">Aloo Prantha</a>
+          <p class="opacity-low">Breakfast</p>
+        </div>
+      </div> 
+    </div>
+
+    <div class="img-box">
+      <img src="https://t3.ftcdn.net/jpg/02/33/48/76/360_F_233487618_zZdP4pLcOeENbhphPlaBuU2CDA3kUW0K.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><a href="https://www.vegrecipesofindia.com/rice-kheer-recipe-chawal-ki-kheer/">Kheer</a></p>
+          <p class="opacity-low">Dessert</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</body>
+</html>

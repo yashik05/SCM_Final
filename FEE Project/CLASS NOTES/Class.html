@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Class Notes</title>
+</head>
+<body>
+    Transition Property:
+While hovering over an element, there is a change in 2 properties:
+1st is the change in background color.
+2nd is change in the width of the element.
+--Transition-Property--
+1. None :
+2. All :
+3. Property :
+ EG: transition-property:none;
+     transition-property:all;
+     transition-property: background-color; (can be any property)
+
+ ##Transition Duration##
+ transition-duration:time
+
+ ## Transition-Delay ##
+ ::Transition delay is the time after which our transition will start.
+ 
+ ---Growing an element---
+ ::In this type of transition effect, whenever you hover the element, the size of the element gets increased slowly or quickly, according to the   transition-duration 
+ 
+--Creating the fading effect--
+::In this, the background opacity is kept low in the beginning and whenever you open the mouse of the element, the background opacity gets increased. We can do so using the opacity property.
+
+--CSS Animation--
+::In css animation, you need to know 2 properties.
+1st: Key Frame 
+2nd: Animation Property 
+
+::Using Key Frames, we set the stages of the animation.
+  CODE-> @keyframes
+:: Every @keyframes is divided into three parts
+1st: Animation Name:
+2nd: Animation Stage:
+3rd: CSS Properties: 
+
+:: Every keyframe is divide into percentages
+o% : The starting stage 
+100% : The ending stage
+
+:: In this a keyframe is created which has 3 stages.
+1st: Size of element is kept small.
+2nd: The size of the element is increase slowly
+3rd: The element is in it's final form. 
+
+## Animation Property ##
+::After defining the keyfram, we use the animation property to make the animation work properly.
+::Animtion property is divided into 2 parts.
+1st: Animation Name 
+2nd: Animation Duration
+
+## Other animation properties for advanced and complex animations ##
+
+1st: Animation-iteration-count:5; --> The number of times, the animation will run, the default value is 1.If you want to run the animation forever then the value is defined as infinte.
+
+2nd: Animation-timing-funtion; --> Used to define the speed curve of the animation.
+
+## Values of Animation-timing-funtion ##
+1st: Ease --> In this the speed of the animation is slow at the beginning and then in between it's speed gets increased then again is slowed down as we reach the ending.
+
+2nd: Linear --> Same speed from starting to end.
+
+3rd: Ease-in --> Slow in starting, then picks up the pace.
+
+4th: Ease-out --> The animation is slow in ending.
+
+5th: Ease-In-Out: --> The animation is slow in the starting as well as in the ending.
+
+6th: Cubic-Bezier --> Can set a custom animation timing.
+     
+</body>
+</html>

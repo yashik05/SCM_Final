@@ -1,0 +1,165 @@
+<html>
+<head>
+  <title>Rajasthani Cuisine</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Raleway;
+    background-color: #202125;
+  }
+  
+  .heading {
+      text-align: center;
+      font-size: 2.0em;
+      letter-spacing: 1px;
+      padding: 40px;
+      color: white;
+  }
+  
+  .gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+  </style>
+</head>
+
+<body>
+  <p class="heading">Rajasthani Cuisine</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img
+        src="https://thumbs.dreamstime.com/b/traditional-rustic-food-dal-bati-churma-indian-traditional-vegetarian-meal-dal-bati-churma-served-rajasthan-sliced-onions-219474807.jpg"
+        alt="">
+      <div class="transparent-box">
+        <div class="caption">
+          <p><a href="https://hebbarskitchen.com/hi/dal-baati-recipe-dal-bati-churma-recipe/">Dal Bati Churma</a></p>
+          <p class="opacity-low">Lunch</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img
+        src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/Spicy_Gatte_Ka_Tawa_Pulao_Recipe-4.jpg"
+        alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><a href="https://food.ndtv.com/recipe-gatte-ke-khichdi-955285">Gatte Di Khichadi</a></p>
+          <p class="opacity-low">Dinner</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img
+        src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/food2goodbypriti-gmail.com/Rajasthani_Dana_Methi__Papad_Ka_Saag_Recipe.jpg"
+        alt="" />
+
+      <div class="transparent-box">
+        <div class="caption">
+          <p><a href="https://www.archanaskitchen.com/rajasthani-dana-methi-papad-ka-saag-recipe">Pappad Ka Saag</a></p>
+          <p class="opacity-low">Lunch</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://t4.ftcdn.net/jpg/01/58/73/99/360_F_158739912_awqTAwPHjBR6rBbZCTqrPjsoDqVOJIGk.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><a href="https://www.vegrecipesofindiacommirchi-vada-recipe-rajasthani-mirchi-vada">Mirchivada<a></p>
+          <p class="opacity-low">Snacks</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/malpua.jpg.webp" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><a
+              href="https://missandmrsjoshi.com/%E0%A4%86%E0%A4%9F%E0%A5%87-%E0%A4%95%E0%A4%BE-%E0%A4%AE%E0%A4%BE%E0%A4%B2%E0%A4%AA%E0%A5%81%E0%A4%86-aate-ka-malpua-banane-ki-vidhi/">Atte
+              ka malpuda</a></p>
+          <p class="opacity-low">Dessert</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://www.cookwithmanali.com/wp-content/uploads/2016/08/Ghevar-Indian-Sweet-500x500.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><a href="https://nishamadhulika.com/331-ghevar-recipe.html">Ghewar</a></p>
+          <p class="opacity-low">Dessert</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+0%{
+    transform:scale(2,1)
+}
+
+100%{
+transfrom:scale(4,4)
+opacity:1;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    animation-name: animation;
+    animation-duration: 5s;
+}

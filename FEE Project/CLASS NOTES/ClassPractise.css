@@ -1,0 +1,18 @@
+.box1{
+    padding:80px;
+    margin:7px;
+    background-color: beige;
+    border: 2px solid black;
+    width:100px;
+    height: 100px;
+    transition-property: width;
+    transition-duration: 4s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+}
+
+.box1:hover{
+    width: 1200px;
+    
+}
+
